@@ -1,2 +1,68 @@
 // Here goes your CSS
 @import 'layout/main';
+
+#form-login{
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    width: 21%;
+    
+    #close{
+        color: white;
+        border-radius: 50%;
+        background-color: black;
+        border:none;
+        position: absolute;
+        left: 92%;
+        top: -8px;
+        padding: 6px 11px;
+        cursor: pointer;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        
+        .title{
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-size: 42px;
+            margin-bottom: 0;
+        }
+
+
+        input{
+            padding: 15px;
+            margin-top: 15px;
+        }
+        .agree-chekbox{
+            margin: 0;
+            
+            #checkbox{
+                margin: 15px 0 0 0 ;
+            }
+        }
+        button{
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            background-color: $secondary-color;
+            color: white;
+            font-size: medium;
+            border:none;
+            cursor: pointer;
+
+            &:disabled{
+                background: black;
+                color: white;
+            }
+        }
+
+
+    }
+
+    
+}
+

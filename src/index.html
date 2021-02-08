@@ -11,11 +11,30 @@
   </head>
   <body>
     <section class="main">
-      <button id="show-popup-form" class="btn btn-main">Click me!</button>
+      <!-- <button id="show-popup-form" class="btn btn-main">Click me!</button> -->
       <!-- Display success message below -->
+      <form action="post" id="form-login">
+        <div type="close" id="close">X</div>
+        <div class="wrapper">
+          <h1 class="title">Login</h1>
+          
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+          
+            <input type="password" name="password" id="Password" placeholder="password" required>
+            <p class ="agree-chekbox" onchange="onClickChangeChekBox()">
+              <input type="checkbox" name="checkbox" id="checkbox"  required >
+              <label for="checkbox">I agree to terms & conditions.</label>
+            </p>
+            
+          
+          <button type="submit" disabled id="btn-submit">Submit</button>
+        </div>
+        
+      </form>
     </section>
     <div class="popup">
       <!-- Here goes your popup form HTML code -->
+      
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>

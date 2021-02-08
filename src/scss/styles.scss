@@ -1,11 +1,25 @@
 // Here goes your CSS
 @import 'layout/main';
 
+#success{
+    font-family: 'Lobster', cursive;
+    font-size: 42px;
+}
+
+#popup{
+    position: fixed;
+    top: 25vh;
+    left: 50vh;
+}
+
 #form-login{
     position: relative;
     background: white;
     border-radius: 10px;
-    width: 21%;
+    padding: 20px;
+    padding-bottom: 0;
+    
+    
     
     #close{
         color: white;
@@ -22,8 +36,7 @@
     .wrapper{
         display: flex;
         flex-direction: column;
-        width: 80%;
-        margin: auto;
+        padding: 0 15px 15px 15px;
         
         .title{
             text-align: center;
@@ -36,6 +49,7 @@
         input{
             padding: 15px;
             margin-top: 15px;
+            
         }
         .agree-chekbox{
             margin: 0;
@@ -47,7 +61,7 @@
         button{
             padding: 15px;
             margin-top: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             background-color: $secondary-color;
             color: white;
             font-size: medium;
@@ -57,12 +71,10 @@
             &:disabled{
                 background: black;
                 color: white;
+                cursor: default;
             }
+            
         }
-
-
     }
-
-    
 }
 

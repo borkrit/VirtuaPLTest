@@ -11,9 +11,15 @@
   </head>
   <body>
     <section class="main">
-      <!-- <button id="show-popup-form" class="btn btn-main">Click me!</button> -->
+       <button id="show-popup-form" class="btn btn-main">Click me!</button> 
       <!-- Display success message below -->
-      <form action="post" id="form-login">
+      <div  hidden id="success">
+        Thank you!
+      </div>
+    </section>
+    <div id="popup" hidden>
+      <!-- Here goes your popup form HTML code -->
+      <form  id="form-login">
         <div type="close" id="close">X</div>
         <div class="wrapper">
           <h1 class="title">Login</h1>
@@ -27,14 +33,10 @@
             </p>
             
           
-          <button type="submit" disabled id="btn-submit">Submit</button>
+          <button type="submit" disabled id="btn-submit" >Submit</button>
         </div>
         
       </form>
-    </section>
-    <div class="popup">
-      <!-- Here goes your popup form HTML code -->
-      
     </div>
     <script src="js/index.min.js" charset="utf-8"></script>
   </body>
